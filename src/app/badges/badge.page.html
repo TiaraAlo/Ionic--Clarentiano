@@ -1,9 +1,9 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
+<ion-header color="medium" [translucent]="true">
+  <ion-toolbar color="secondary" slot="secondary" style="padding:0 10px;">
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
-    <h4 style="text-align: center; margin-left: -40px">Badges</h4>
+    <h4 style="text-align: left;">Badges</h4>
   </ion-toolbar>
   <ion-menu style="height: 100vh !important" contentId="main-content">
     <ion-header>
@@ -21,7 +21,7 @@
         "
         tab="tab1"
       >
-        <h4><ion-icon aria-hidden="true" name="home"></ion-icon> Home</h4>
+        <h4><ion-icon aria-hidden="true" name="home"></ion-icon> Roupas</h4>
       </ion-tab-button>
       <ion-tab-button
         style="
@@ -32,7 +32,7 @@
         "
         tab="tab2"
       >
-        <h4><ion-icon aria-hidden="true" name="home"></ion-icon> Dados</h4>
+        <h4><ion-icon aria-hidden="true" name="home"></ion-icon> Cadastro</h4>
       </ion-tab-button>
       <ion-tab-button
         style="
@@ -48,26 +48,13 @@
       <ion-tab-button
         style="
           display: flex;
-          text-align: left;
-          width: 100%;
-          height: 50px !important;
-        "
-        tab="welcome"
-      >
-        <h4>
-          <ion-icon aria-hidden="true" name="home"></ion-icon> Boas Vindas
-        </h4>
-      </ion-tab-button>
-      <ion-tab-button
-        style="
-          display: flex;
           text-align: left !important;
           width: 100%;
           height: 50px !important;
         "
         tab="badge"
       >
-        <h4><ion-icon aria-hidden="true" name="home"></ion-icon> Badge</h4>
+        <h4><ion-icon aria-hidden="true" name="home"></ion-icon> Badges</h4>
       </ion-tab-button>
     </ion-content>
   </ion-menu>
@@ -83,8 +70,8 @@
   </div>
 </ion-header>
 
-<ion-content>
-  <ion-list style="margin-top: 2rem">
+<ion-content color="danger">
+  <ion-list style="text-align: center;width:30%;margin:2rem auto;">
     <ion-item>
       <ion-label>Seguidares</ion-label>
       <ion-badge color="primary">22k</ion-badge>

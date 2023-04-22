@@ -1,9 +1,9 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
+<ion-header color="medium" [translucent]="true">
+  <ion-toolbar color="secondary" slot="secondary" style="padding:0 10px;">
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
-    <h4 style="text-align: center; margin-left: -40px">Home</h4>
+    <h4 style="text-align: left;">Roupas</h4>
   </ion-toolbar>
   <ion-menu style="height: 100vh !important" contentId="main-content">
     <ion-header>
@@ -21,7 +21,7 @@
         "
         tab="tab1"
       >
-        <h4><ion-icon aria-hidden="true" name="home"></ion-icon> Home</h4>
+        <h4><ion-icon aria-hidden="true" name="home"></ion-icon> Roupas</h4>
       </ion-tab-button>
       <ion-tab-button
         style="
@@ -32,7 +32,7 @@
         "
         tab="tab2"
       >
-        <h4><ion-icon aria-hidden="true" name="home"></ion-icon> Dados</h4>
+        <h4><ion-icon aria-hidden="true" name="home"></ion-icon> Cadastro</h4>
       </ion-tab-button>
       <ion-tab-button
         style="
@@ -48,26 +48,13 @@
       <ion-tab-button
         style="
           display: flex;
-          text-align: left;
-          width: 100%;
-          height: 50px !important;
-        "
-        tab="welcome"
-      >
-        <h4>
-          <ion-icon aria-hidden="true" name="home"></ion-icon> Boas Vindas
-        </h4>
-      </ion-tab-button>
-      <ion-tab-button
-        style="
-          display: flex;
           text-align: left !important;
           width: 100%;
           height: 50px !important;
         "
         tab="badge"
       >
-        <h4><ion-icon aria-hidden="true" name="home"></ion-icon> Badge</h4>
+        <h4><ion-icon aria-hidden="true" name="home"></ion-icon> Badges</h4>
       </ion-tab-button>
     </ion-content>
   </ion-menu>
@@ -84,67 +71,105 @@
 </ion-header>
 
 <ion-content style="max-height: 100px !important">
-  <h2 style="text-align: center; margin-top: 2rem">Opções</h2>
+  <h2 style="text-align: center; margin-top: 2rem">Roupas em estoque</h2>
 </ion-content>
 <ion-content>
-  <ion-list>
+  <ion-list style="width:25%;margin:2rem auto;position: relative;">
     <ion-item>
       <ion-label
-        ><ion-button id="open-toast01" expand="block"
-          >Pokémon Yellow</ion-button
+        ><ion-button color="danger" id="open-toast01" expand="block"
+          >Camisas Vermelhas</ion-button
         ></ion-label
       >
       <ion-toast
+        style="text-align: center;position: absolute;top: -30%;"
+        color="danger"
         trigger="open-toast01"
-        message="Você selecionou o Pokémon Yellow"
+        message="Você adicionou Camisas Vermelhas"
         [duration]="5000"
       ></ion-toast>
     </ion-item>
     <ion-item>
       <ion-label
-        ><ion-button id="open-toast02" expand="block"
-          >Mega Man X</ion-button
+        ><ion-button color="medium" id="open-toast02" expand="block"
+          >Calças cinzas</ion-button
         ></ion-label
       >
       <ion-toast
+        style="text-align: center;position: absolute;top: -30%;"
+        color="medium"
         trigger="open-toast02"
-        message="Você selecionou o Mega Man X"
+        message="Você adicionou Calças cinzas"
         [duration]="5000"
       ></ion-toast>
     </ion-item>
     <ion-item>
       <ion-label
-        ><ion-button id="open-toast03" expand="block"
-          >The Legend of Zelda</ion-button
+        ><ion-button color="success" id="open-toast03" expand="block"
+          >Boné Verde</ion-button
         ></ion-label
       >
       <ion-toast
+        style="text-align: center;position: absolute;top: -30%;"
+        color="success"
         trigger="open-toast03"
-        message="Você selecionou o The Legend of Zelda"
+        message="Você adicionou Boné Verde"
         [duration]="5000"
       ></ion-toast>
     </ion-item>
     <ion-item>
       <ion-label
-        ><ion-button id="open-toast04" expand="block"
-          >Pac-Man</ion-button
+        ><ion-button color="warning" id="open-toast04" expand="block"
+          >Casaco Amaralho</ion-button
         ></ion-label
       >
       <ion-toast
+        color="warning"
+        style="text-align: center;position: absolute;top: -30%;"
         trigger="open-toast04"
-        message="Você selecionou o Pac-Man"
+        message="Você adicionou Casaco Amaralho"
         [duration]="5000"
       ></ion-toast>
     </ion-item>
     <ion-item>
       <ion-label
-        ><ion-button id="open-toast05" expand="block"
-          >Super Mario World</ion-button
+        ><ion-button color="dark" id="open-toast05" expand="block"
+          >Jaqueta Branca</ion-button
         ></ion-label
       >
       <ion-toast
+        color="dark"
+        style="text-align: center;position: absolute;top: -30%;"
         trigger="open-toast05"
-        message="Você selecionou o Super Mario World"
+        message="Você adicionou Jaqueta Branca"
+        [duration]="5000"
+      ></ion-toast>
+    </ion-item>
+    <ion-item>
+      <ion-label
+        ><ion-button color="light" id="open-toast06" expand="block"
+          >Sapatos Pretos</ion-button
+        ></ion-label
+      >
+      <ion-toast
+        color="light"
+        style="text-align: center;position: absolute;top: -30%;"
+        trigger="open-toast06"
+        message="Você adicionou Sapatos Pretos"
+        [duration]="5000"
+      ></ion-toast>
+    </ion-item>
+    <ion-item>
+      <ion-label
+        ><ion-button color="secondary" id="open-toast07" expand="block"
+          >Oculos Azuis</ion-button
+        ></ion-label
+      >
+      <ion-toast
+        color="secondary"
+        style="text-align: center;position: absolute;top: -30%;"
+        trigger="open-toast07"
+        message="Você adicionou Oculos Azuis"
         [duration]="5000"
       ></ion-toast>
     </ion-item>
